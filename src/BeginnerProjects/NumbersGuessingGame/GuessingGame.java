@@ -1,3 +1,5 @@
+package BeginnerProjects.NumbersGuessingGame;
+
 import java.util.Scanner;
 
 public class GuessingGame {

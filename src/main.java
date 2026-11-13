@@ -1,3 +1,7 @@
+import BeginnerProjects.NumbersGuessingGame.GuessingGame;
+import BeginnerProjects.SimpleCalculator.SimpleCalculator;
+
 void main(){
-    GuessingGame.game();
+    //GuessingGame.game();
+    SimpleCalculator.calculator();
 }
