@@ -21,18 +21,19 @@ public class SimpleCalculator {
         //User input
         System.out.print("insert the first number: ");
         num1 = sc.nextInt();
-        System.out.println("insert an operator(+,-,*,/,^): ");
+        System.out.print("insert an operator(+,-,*,/,^): ");
         operator = sc.next().charAt(0);
-        System.out.printf("insert the second number: ");
+        System.out.print("insert the second number: ");
         num2 = sc.nextInt();
 
         switch (operator){
             case '+' -> result = num1 + num2;
             case '-' -> result = num1 - num2;
             case '*' -> result = num1 * num2;
-            case '/' -> {
-                if(num2 == 0){System.out.println("Cannot devide by zero");}
-                else result = num1/num2;
+            case '/' -> {try{result = num1/num2;}
+                catch(Exception E){
+                    System.out.println("Cannot divide by Zero");
+                }
             }
             case '^' -> result = (int) Math.pow(num1,num2);
 

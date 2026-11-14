@@ -1,7 +1,9 @@
+import BeginnerProjects.Converter.Converter;
 import BeginnerProjects.NumbersGuessingGame.GuessingGame;
 import BeginnerProjects.SimpleCalculator.SimpleCalculator;
 
 void main(){
     //GuessingGame.game();
-    SimpleCalculator.calculator();
+    //SimpleCalculator.calculator();
+    Converter.convert();
 }
